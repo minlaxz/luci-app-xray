@@ -21,6 +21,9 @@ jobs:
           - arch: x86_64
             sdk_url_path: https://downloads.openwrt.org/snapshots/targets/x86/64
             sdk_name: -sdk-x86-64_
+          - arch: ath79
+            sdk_url_path: https://downloads.openwrt.org/snapshots/targets/ath79/generic
+            sdk_name: -sdk-ath79-generic_
 
     env:
       SDK_URL_PATH: ${{ matrix.sdk_url_path }}
